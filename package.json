@@ -1,0 +1,16 @@
+{
+  "name": "person",
+  "version": "0.0.3",
+  "description": "Find out who a person is given an email address",
+  "main": "lib/person.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dscape/person.git"
+  },
+  "author": "",
+  "license": "Apache License Version 2.0",
+  "bugs": {
+    "url": "https://github.com/dscape/person/issues"
+  }
+}
