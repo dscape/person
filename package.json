@@ -2,7 +2,7 @@
   "name": "person",
   "version": "0.1.1",
   "description": "Find out who a person is given an email address",
-  "main": "lib/person.js",
+  "main": "lib/person-stream.js",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -12,5 +12,10 @@
   "license": "Apache License Version 2.0",
   "bugs": {
     "url": "https://github.com/dscape/person/issues"
+  },
+  "dependencies": {
+    "request": "^2.36.0",
+    "debug": "^1.0.0",
+    "faker": "^1.0.0"
   }
 }

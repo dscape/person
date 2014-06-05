@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+var personStream = require('../lib/person-stream');
+
+var stdin = process.openStdin();
+stdin.setEncoding('utf8');
+stdin.pipe(personStream());
