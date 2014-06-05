@@ -1,6 +1,17 @@
 #!/usr/bin/env node
-var personStream = require('../lib/person-stream');
+var personStream = require('../lib/person-stream'),
+  es = require('event-stream');
 
 var stdin = process.openStdin();
 stdin.setEncoding('utf8');
-stdin.pipe(personStream());
+stdin
+  .pipe(es.split())
+  .pipe(es.map(function (data, callback) {
+    if(data.trim() !== '') {
+      callback(null, data)
+    } else {
+      callback();
+    }
+  }))
+  .pipe(personStream())
+  .pipe(process.stdout);
