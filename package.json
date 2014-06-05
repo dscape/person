@@ -1,6 +1,6 @@
 {
   "name": "person",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Find out who a person is given an email address",
   "main": "lib/person-stream.js",
   "scripts": {},
